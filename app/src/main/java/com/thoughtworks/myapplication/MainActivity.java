@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
+
 import com.thoughtworks.myapplication.domain.PM25;
 import com.thoughtworks.myapplication.service.AirServiceClient;
 
@@ -82,7 +83,7 @@ public class MainActivity extends AppCompatActivity {
     private void populate(List<PM25> data) {
         if (data != null && !data.isEmpty()) {
             PM25 pm25 = data.get(0);
-            pm25TextView.setText(pm25.getPositionName() + pm25.getQuality());
+            pm25TextView.setText(pm25.getPositionName() + '\u0020' + '\u0020' + pm25.getQuality());
         }
     }
 }

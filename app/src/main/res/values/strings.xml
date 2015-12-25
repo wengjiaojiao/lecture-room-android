@@ -3,4 +3,5 @@
     <string name="button_query">Query</string>
     <string name="error_message_query_pm25">Please try again</string>
     <string name="loading_message">Loading</string>
+    <string name="input_message">Please input city name</string>
 </resources>
